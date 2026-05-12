@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-opencellid",
+  "version": "0.1.0",
+  "description": "OpenCellID MCP — cell tower geolocation database (free with key)",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "opencellid"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-opencellid"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

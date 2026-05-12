@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/opencellid",
+  "title": "Opencellid",
+  "description": "OpenCellID MCP — cell tower geolocation database (free with key)",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/opencellid",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-opencellid",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/opencellid/mcp"
+    }
+  ]
+}
