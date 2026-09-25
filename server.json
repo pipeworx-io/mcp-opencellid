@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/opencellid",
   "title": "Opencellid",
   "description": "OpenCellID MCP — cell tower geolocation database (free with key)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/opencellid",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-opencellid",
