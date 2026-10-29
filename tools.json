@@ -1,0 +1,65 @@
+[
+  {
+    "name": "get_cell",
+    "description": "Geolocate a cell tower by mobile network identifiers. MCC = Mobile Country Code, MNC = Mobile Network Code, LAC = Location Area Code, cell_id = Cell ID. Returns lat/lon, range, samples, radio type (GSM/UMTS/LTE).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "mcc": {
+          "type": "number",
+          "description": "Mobile Country Code (e.g., 310 = US)"
+        },
+        "mnc": {
+          "type": "number",
+          "description": "Mobile Network Code (e.g., 410 = AT&T US)"
+        },
+        "lac": {
+          "type": "number",
+          "description": "Location Area Code"
+        },
+        "cell_id": {
+          "type": "number",
+          "description": "Cell ID"
+        },
+        "radio": {
+          "type": "string",
+          "description": "GSM | UMTS | LTE | CDMA (optional disambiguation)"
+        }
+      },
+      "required": [
+        "mcc",
+        "mnc",
+        "lac",
+        "cell_id"
+      ]
+    }
+  },
+  {
+    "name": "cells_in_area",
+    "description": "List cell towers inside a bounding box. Bounding box format: \"lat_sw,lon_sw,lat_ne,lon_ne\". OpenCellID caps results per call — narrow the bbox if you need detail.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "bbox": {
+          "type": "string",
+          "description": "Bounding box \"lat_sw,lon_sw,lat_ne,lon_ne\""
+        },
+        "mcc": {
+          "type": "number",
+          "description": "Restrict to a country (Mobile Country Code)"
+        },
+        "mnc": {
+          "type": "number",
+          "description": "Restrict to a network within MCC"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max records (default 1000, server-capped)"
+        }
+      },
+      "required": [
+        "bbox"
+      ]
+    }
+  }
+]
