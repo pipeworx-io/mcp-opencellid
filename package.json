@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-opencellid",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "OpenCellID MCP — cell tower geolocation database (free with key)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "opencellid",
     "gatewaySlug": "opencellid",
-    "sourceHash": "v1-46c0982b8a55f8fd5fb3aa5ff8ae73c0e00213aefb2bba34ea99527ec71338ca",
-    "sourceCommit": "b2c4383545bb35171d0ada2beb1c9c7168ea175e"
+    "sourceHash": "v1-df9f44e3907d257a9818c950473a978aa6d6d68022a4fd87b12672f1af477972",
+    "sourceCommit": "bed7faa04e7276899b5e3870ef11c98625371f2b"
   }
 }
